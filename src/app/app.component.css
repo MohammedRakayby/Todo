@@ -1,0 +1,17 @@
+.material-icons.create {
+    font-size: 20px;
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.input-form {
+    /* min-width: 100px; */
+    max-width: 500px;
+    width: 100%;
+}
+
+.input-field {
+    width: 100%;
+}
