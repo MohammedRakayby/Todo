@@ -15,3 +15,6 @@
 .input-field {
     width: 100%;
 }
+.todo-list{
+    overflow: auto;
+}

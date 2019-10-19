@@ -5,16 +5,22 @@
                 <mat-grid-tile [colspan]=4>
                     <form class="input-form">
                         <mat-form-field class="input-field">
-                            <input matInput placeholder="Enter Todo">
+                            <mat-label>Title</mat-label>
+                            <input matInput #userInput placeholder="Enter Todo" appearance="standard">
                         </mat-form-field>
                     </form>
-                    <button id="addTodo" mat-fab color="warn" (click)="createTodo()"><i
+                    <button id="addTodo" mat-fab color="warn" (click)="createTodo(userInput.value)"><i
                             class="material-icons create">create</i></button>
                 </mat-grid-tile>
-                <mat-grid-tile>
+                <mat-grid-tile [colspan]=2 [rowspan]=5 class="todo-list">
+                    <ul>
+                        <li *ngFor="let todo of todoArray">
+                                <app-todo [todoModel]="todo"></app-todo>
+                        </li>
+                    </ul>
 
                 </mat-grid-tile>
-
+                <p>for debugging {{todoArray.length}}</p>
             </mat-grid-list>
         </mat-tab>
         <mat-tab label="World API"> To be added </mat-tab>
