@@ -1,3 +1,16 @@
-<p>ID: {{todoModel.id}}</p>
-<p>Content: {{todoModel.content}}</p>
-<p>Created on: {{todoModel.dateCreated  | date:'short'}}</p>
+<mat-card class="example-card">
+    <mat-card-header >
+        <mat-card-title>{{todoModel.content}}</mat-card-title>
+        <mat-card-subtitle>{{todoModel.dateCreated  | date:'short'}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            The content goes here
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Expand</button>
+        <button mat-button>Done</button>
+        <button mat-button>Delete</button>
+    </mat-card-actions>
+</mat-card>

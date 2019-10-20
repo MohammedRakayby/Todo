@@ -8,9 +8,11 @@ import { TodoModel } from '../model/todo-model';
 })
 export class TodoComponent implements OnInit {
   @Input() todoModel:TodoModel;
+  details:string;
   constructor() { }
 
   ngOnInit() {
+    this.details=this.todoModel.content;
   }
 
 }

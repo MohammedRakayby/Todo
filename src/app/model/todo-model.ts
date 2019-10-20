@@ -1,6 +1,6 @@
 export class TodoModel{
     constructor(){};
-    id:number;
+    id:string;
     content:string;
     dateCreated:Date;
 }
